@@ -49,8 +49,12 @@ const multiply = function(arr) {
   return product;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	  if (typeof(a) != 'number' || typeof(b) != 'number') {
+    return 'ERROR';
+  }
+
+  return Math.pow(a, b);
 };
 
 const factorial = function() {
