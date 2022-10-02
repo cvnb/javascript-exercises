@@ -6,8 +6,12 @@ const add = function(a, b) {
   return a + b;
 };
 
-const subtract = function() {
-	
+const subtract = function(a, b) {
+  if (typeof(a) != 'number' || typeof(b) != 'number') {
+    return 'ERROR';
+  }
+
+  return a - b;
 };
 
 const sum = function() {
