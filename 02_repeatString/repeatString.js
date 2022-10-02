@@ -11,5 +11,5 @@ const repeatString = function (text, count) {
 
 };
 
-// Do not edit .repeat()below this line
+// Do not edit below this line
 module.exports = repeatString;
