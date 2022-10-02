@@ -32,8 +32,21 @@ const sum = function(arr) {
   
 };
 
-const multiply = function() {
+const multiply = function(arr) {
+  if (!Array.isArray(arr)) {
+    return 'ERROR';
+  }
 
+  if (arr.length === 0) {
+    return 0;
+  }
+
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+     product = product * arr[i];
+  }
+
+  return product;
 };
 
 const power = function() {
