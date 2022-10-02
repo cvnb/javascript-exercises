@@ -1,9 +1,12 @@
 const palindromes = function (str) {
+  let str_ = str.toLowerCase();
+  str_ = str_.replaceAll(/[ \.,!]/g, '');
+
   let left = 0;
-  let right = str.length - 1;
+  let right = str_.length - 1;
 
   while (left < right) {
-    if (str[left] != str[right]) {
+    if (str_[left] != str_[right]) {
       return false;
     }
     left++;
