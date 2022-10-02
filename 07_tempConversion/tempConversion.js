@@ -1,15 +1,15 @@
-const round = function (num) {
+const rounded = function (num) {
   return parseFloat(num.toFixed(1));
 }
 
 const ftoc = function (f) {
   let c = (f - 32) * 5 / 9;
-  return round(c);
+  return rounded(c);
 };
 
 const ctof = function (c) {
   let f = (c * 9 / 5) + 32;
-  return round(f);
+  return rounded(f);
 };
 
 // Do not edit below this line
