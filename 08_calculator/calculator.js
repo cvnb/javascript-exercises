@@ -14,8 +14,22 @@ const subtract = function(a, b) {
   return a - b;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+  if (!Array.isArray(arr)) {
+    return 'ERROR';
+  }
+
+  if (arr.length === 0) {
+    return 0;
+  }
+
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+
+  return sum;
+  
 };
 
 const multiply = function() {
