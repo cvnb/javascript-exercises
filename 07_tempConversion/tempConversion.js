@@ -1,5 +1,5 @@
 const round = function (num) {
-  return Math.round(num + Number.EPSILON) * 10 / 10;
+  return parseFloat(num.toFixed(1));
 }
 
 const ftoc = function (f) {
